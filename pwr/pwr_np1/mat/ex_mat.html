@@ -1,15 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Como Usar as Fórmulas da Máquina Enigma de Arthur Scherbius</title>
-    <link rel="stylesheet" type="text/css" href="../static/style.css"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Exemplos – Máquina Enigma</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <style>
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
+        .container h1, .container h2 {
+            color: #003366;
+            margin-top: 2rem;
+        }
+
+        .container p, .container li {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .imagem-exemplo {
+            width: 100%;
+            max-width: 300px;
+            display: block;
+            margin: 1.5rem auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        pre {
+            background-color: #f0f0f0;
+            padding: 1rem;
+            border-left: 4px solid #003366;
+            overflow-x: auto;
+            font-family: monospace;
+        }
+
+        ol {
+            padding-left: 1.2rem;
+        }
+
+        section {
+            padding: 2rem 0;
+        }
+
+        header {
+            margin-bottom: 2rem;
+        }
+
+        #header h1 {
+            text-align: center;
+            color: #003366;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="nav-bar">
+            <div class="logo-area">
+                <div class="logo-container">
+                    <img src="../static/Novo_Logo_UNIP.png" alt="Logo UNIP" class="logo-unip">
+                </div>
+                <span class="curso-titulo">Ciência da Computação</span>
+            </div>
             <ul class="main-menu">
                 <li><a href="../index.html">Início</a></li>
                 <li class="dropdown">
@@ -29,49 +88,56 @@
             </ul>
         </nav>
     </header>
-    <div id="header">
+
+    <div class="container">
         <h1>Como Usar as Fórmulas da Máquina Enigma de Arthur Scherbius</h1>
+
+        <section>
+            <h2>Introdução</h2>
+            <p>A máquina Enigma, desenvolvida por Arthur Scherbius, foi uma das ferramentas de criptografia mais avançadas usadas na Segunda Guerra Mundial. Ela utilizava fórmulas baseadas em substituição e permutação de caracteres, combinadas com rotores que giravam a cada tecla pressionada, criando uma cifra quase impossível de ser quebrada sem o conhecimento adequado.</p>
+            <img src="foto1.jpeg" alt="Diagrama da Máquina Enigma" class="imagem-exemplo">
+        </section>
+
+        <section>
+            <h2>Estrutura da Máquina</h2>
+            <p>A máquina Enigma é composta por uma série de rotores, conectados a uma tábua de substituição e a um painel de conexão elétrica. Cada rotor contém uma permutação das letras do alfabeto e gira conforme a digitação, alterando a sequência de letras e garantindo que a cifra seja alterada a cada operação.</p>
+        </section>
+
+        <section>
+            <h2>Como Usar a Fórmula</h2>
+            <p>Considere a seguinte fórmula simplificada:</p>
+            <pre>C = E(P, K)</pre>
+            <p>Onde:</p>
+            <ul>
+                <li><strong>C</strong> é o caractere codificado.</li>
+                <li><strong>E</strong> é a função de codificação (Enigma).</li>
+                <li><strong>P</strong> é o caractere original (plain text).</li>
+                <li><strong>K</strong> é a chave (configuração dos rotores).</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Passos para Codificar uma Mensagem</h2>
+            <ol>
+                <li><strong>Passo 1:</strong> Defina a configuração inicial dos rotores.</li>
+                <li><strong>Passo 2:</strong> Digite o texto simples (P).</li>
+                <li><strong>Passo 3:</strong> O rotor gira e realiza a substituição.</li>
+                <li><strong>Passo 4:</strong> A função de codificação gera o caractere cifrado (C).</li>
+                <li><strong>Passo 5:</strong> Repita até codificar toda a mensagem.</li>
+            </ol>
+            <img src="foto2.jpeg" alt="Funcionamento Interno" class="imagem-exemplo">
+        </section>
+
+        <section>
+            <h2>Exemplo de Codificação</h2>
+            <p>Mensagem original: <strong>"HELLO"</strong></p>
+            <p>Resultado cifrado (hipotético): <strong>"MFNQZ"</strong></p>
+        </section>
+
+        <section>
+            <h2>Conclusão</h2>
+            <p>Com sua complexidade e rotatividade, a Enigma mostrou o quanto as fórmulas e configurações matemáticas podiam transformar a segurança de mensagens. Seu estudo é essencial para entender a história da criptografia moderna.</p>
+        </section>
     </div>
-
-    <section>
-        <h2>Introdução</h2>
-        <p>A máquina Enigma, desenvolvida por Arthur Scherbius, foi uma das ferramentas de criptografia mais avançadas usadas na Segunda Guerra Mundial. Ela utilizava fórmulas baseadas em substituição e permutação de caracteres, combinadas com rotores que giravam a cada tecla pressionada, criando uma cifra quase impossível de ser quebrada sem o conhecimento adequado.</p>
-
-        <h2>Estrutura da Máquina</h2>
-        <p>A máquina Enigma é composta por uma série de rotores, conectados a uma tábua de substituição e a um painel de conexão elétrica. Cada rotor contém uma permutação das letras do alfabeto e gira conforme a digitação, alterando a sequência de letras e garantindo que a cifra seja alterada a cada operação.</p>
-
-        <h2>Como Usar a Fórmula</h2>
-        <p>Para entender como usar a fórmula na máquina Enigma, considere a seguinte fórmula simplificada:</p>
-
-        <pre>
-        C = E(P, K)
-        </pre>
-
-        <p>Onde:</p>
-        <ul>
-            <li><strong>C</strong> é o caractere codificado.</li>
-            <li><strong>E</strong> é a função de codificação (Enigma).</li>
-            <li><strong>P</strong> é o caractere original (plain text).</li>
-            <li><strong>K</strong> é a chave, que depende da configuração dos rotores e da posição inicial deles.</li>
-        </ul>
-
-        <h2>Passos para Codificar uma Mensagem</h2>
-        <p>Para usar a máquina Enigma para codificar uma mensagem, siga os passos abaixo:</p>
-        <ol>
-            <li><strong>Passo 1:</strong> Defina a configuração inicial dos rotores. Isso inclui a posição inicial e a ordem dos rotores.</li>
-            <li><strong>Passo 2:</strong> Insira o texto simples (P) na máquina, pressionando as teclas correspondentes.</li>
-            <li><strong>Passo 3:</strong> O rotor gira, realizando uma substituição da letra de acordo com a tabela interna.</li>
-            <li><strong>Passo 4:</strong> A máquina aplica a função de codificação (E), gerando o caractere codificado (C) correspondente.</li>
-            <li><strong>Passo 5:</strong> Repita o processo até que toda a mensagem tenha sido codificada.</li>
-        </ol>
-
-        <h2>Exemplo de Codificação</h2>
-        <p>Suponha que a mensagem "HELLO" seja codificada usando uma máquina Enigma com configurações específicas de rotores.</p>
-        <p>Primeiro, a letra "H" é codificada, gerando um caractere aleatório. Em seguida, o rotor gira e a letra "E" é codificada, e assim por diante até que a palavra completa tenha sido transformada em uma sequência cifrada.</p>
-
-        <h2>Conclusão</h2>
-        <p>O uso das fórmulas da máquina Enigma exige a correta configuração dos rotores, o que tornava a criptografia extremamente segura. Mesmo que a configuração fosse descoberta, a mudança contínua das posições dos rotores dificultava a quebra do código.</p>
-    </section>
-
 </body>
 </html>

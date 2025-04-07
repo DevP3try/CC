@@ -1,64 +1,168 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fórmulas de Maxwell - Lei de Gauss</title>
-    <link rel="stylesheet" type="text/css" href="../static/style.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fórmulas Físicas de Maxwell</title>
+  <link rel="stylesheet" href="../static/style.css" />
+  <style>
+    main.content {
+        max-width: 960px;
+        margin: 2rem auto;
+        background: #fff;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #003366;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        color: #004080;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        color: #004080;
+    }
+
+    p, li {
+        font-size: 1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    ul {
+        padding-left: 1.5rem;
+    }
+
+    code {
+        background-color: #eef;
+        padding: 0.2rem 0.4rem;
+        border-radius: 4px;
+        font-family: monospace;
+    }
+
+    pre code {
+        display: block;
+        padding: 1rem;
+        background-color: #eef3fb;
+        border-left: 4px solid #003366;
+        white-space: pre-wrap;
+    }
+
+    .image-section {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 1rem;
+    }
+
+    figure {
+        margin: 0;
+        text-align: center;
+    }
+
+    figure img {
+        max-width: 50%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    figcaption {
+        margin-top: 0.5rem;
+        font-style: italic;
+        color: #444;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <nav class="nav-bar">
+      <div class="logo-area">
+        <div class="logo-container">
+          <img src="../static/Novo_Logo_UNIP.png" alt="Logo UNIP" class="logo-unip" />
+        </div>
+        <span class="curso-titulo">Ciência da Computação</span>
+      </div>
+      <ul class="main-menu">
+        <li><a href="../index.html">Início</a></li>
+        <li class="dropdown">
+          <a href="../mat/bio_mat.html">Matemático</a>
+          <ul class="dropdown-menu">
+            <li><a href="../mat/form_mat.html">Fórmulas</a></li>
+            <li><a href="../mat/ex_mat.html">Exemplos</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="../fis/bio_fis.html">Físico</a>
+          <ul class="dropdown-menu">
+            <li><a href="../fis/form_fis.html">Fórmulas</a></li>
+            <li><a href="../fis/ex_fis.html">Exemplos</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-    <header>
-        <nav>
-            <ul class="main-menu">
-                <li><a href="../index.html">Início</a></li>
-                <li class="dropdown">
-                    <a href="../mat/bio_mat.html">Matemático</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="../mat/form_mat.html">Fórmulas</a></li>
-                        <li><a href="../mat/ex_mat.html">Exemplos</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="../fis/bio_fis.html">Físico</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="../fis/form_fis.html">Fórmulas</a></li>
-                        <li><a href="../fis/ex_fis.html">Exemplos</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
+  <main class="content">
+    <h1>Fórmulas Físicas de Maxwell</h1>
 
-    <div id="header">
-        <h1>Lei de Gauss para o Campo Elétrico</h1>
-        <p>Parte das Equações de Maxwell</p>
-    </div>
+    <section>
+      <h2>Introdução</h2>
+      <p>
+        James Clerk Maxwell foi um físico teórico escocês cujos trabalhos revolucionaram o entendimento do eletromagnetismo. Suas equações descrevem como campos elétricos e magnéticos se propagam e interagem com cargas elétricas.
+      </p>
+    </section>
 
-    <div class="container">
-        <h2>Fórmula</h2>
-        <p>A Lei de Gauss pode ser representada matematicamente por:</p>
-        <pre>∮ E · dA = Q_interna / ε₀</pre>
-        <p>Onde:</p>
-        <ul>
-            <li><strong>E</strong>: vetor campo elétrico</li>
-            <li><strong>dA</strong>: vetor área infinitesimal de uma superfície fechada</li>
-            <li><strong>Q_interna</strong>: carga elétrica total dentro da superfície</li>
-            <li><strong>ε₀</strong>: permissividade elétrica do vácuo</li>
-        </ul>
+    <section>
+      <h2>As Equações de Maxwell</h2>
+      <p>As quatro equações fundamentais de Maxwell são:</p>
+      <pre><code>
+1. ∇ · E = ρ/ε₀         (Lei de Gauss para o campo elétrico)
+2. ∇ · B = 0             (Lei de Gauss para o magnetismo)
+3. ∇ × E = -∂B/∂t        (Lei de Faraday da indução)
+4. ∇ × B = μ₀J + μ₀ε₀∂E/∂t (Lei de Ampère-Maxwell)
+      </code></pre>
+      <ul>
+        <li><strong>E:</strong> Campo elétrico</li>
+        <li><strong>B:</strong> Campo magnético</li>
+        <li><strong>ρ:</strong> Densidade de carga</li>
+        <li><strong>J:</strong> Densidade de corrente</li>
+        <li><strong>ε₀:</strong> Permissividade do vácuo</li>
+        <li><strong>μ₀:</strong> Permeabilidade do vácuo</li>
+      </ul>
+    </section>
 
-        <h2>Surgimento</h2>
-        <p>A lei foi originalmente formulada por Carl Friedrich Gauss, mas foi incorporada ao conjunto das Equações de Maxwell no século XIX. Maxwell utilizou essa e outras leis para unificar os fenômenos elétricos e magnéticos numa teoria coerente chamada de eletromagnetismo clássico.</p>
+    <section>
+      <h2>Aplicações na Tecnologia Moderna</h2>
+      <p>
+        As equações de Maxwell são a base do funcionamento de praticamente todas as tecnologias de comunicação moderna, como rádio, televisão, micro-ondas, radares e sistemas de internet sem fio.
+      </p>
+    </section>
 
-        <h2>Como Funciona</h2>
-        <p>A Lei de Gauss descreve o comportamento do campo elétrico ao redor de distribuições de carga. Ela afirma que o fluxo do campo elétrico através de uma superfície fechada é diretamente proporcional à carga total contida no interior da superfície.</p>
-
-        <h2>Exemplo</h2>
-        <p>Para uma carga pontual <strong>q</strong> colocada no centro de uma esfera imaginária de raio <strong>r</strong>, o campo elétrico em qualquer ponto da superfície é dado por:</p>
-        <pre>E = q / (4πε₀r²)</pre>
-        <p>Este é um caso especial da Lei de Gauss, que resulta na Lei do Inverso do Quadrado. O campo se distribui radialmente e sua intensidade diminui com o quadrado da distância.</p>
-    </div>
-
+    <section>
+      <h2>Representações Visuais</h2>
+      <div class="image-section">
+        <figure>
+          <img src="./fis foto 1.png" alt="Ilustração do campo elétrico e magnético">
+          <figcaption><strong>Figura 1:</strong> Campo elétrico e magnético se propagando como uma onda eletromagnética.</figcaption>
+        </figure>
+        <figure>
+          <img src="./interecao das cargas.png" alt="Interação de cargas e campos">
+          <figcaption><strong>Figura 2:</strong> Interações fundamentais descritas pelas equações de Maxwell.</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
