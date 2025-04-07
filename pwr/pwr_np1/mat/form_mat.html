@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Máquina Enigma de Arthur Scherbius</title>
     <link rel="stylesheet" type="text/css" href="../static/style.css"/>
-
 </head>
 <body>
     <header>
@@ -29,34 +28,68 @@
             </ul>
         </nav>
     </header>
+
     <div id="header">
         <h1>Fórmulas da Máquina Enigma de Arthur Scherbius</h1>
     </div>
 
     <section>
         <h2>Introdução</h2>
-        <p>A máquina Enigma foi um dispositivo de codificação utilizado pela Alemanha durante a Segunda Guerra Mundial. Desenvolvida por Arthur Scherbius, a máquina Enigma utilizava um sistema de rotores para gerar cifras complexas, que eram quase impossíveis de serem decifradas sem o conhecimento correto da configuração dos rotores e das chaves de codificação.</p>
+        <p>A máquina Enigma foi um dispositivo de codificação utilizado pela Alemanha durante a Segunda Guerra Mundial. Desenvolvida por Arthur Scherbius, a máquina utilizava um sistema de rotores para gerar cifras complexas, quase impossíveis de serem decifradas sem o conhecimento correto da configuração dos rotores e das chaves de codificação.</p>
 
         <h2>Funcionamento da Máquina</h2>
-        <p>A Enigma é composta por uma série de rotores (geralmente 3 ou 4) que alteram o caminho das letras, realizando uma substituição baseada em uma tabela. A cada vez que uma tecla era pressionada, os rotores giravam e alteravam a cifra, tornando a codificação extremamente difícil de ser quebrada sem o equipamento correto.</p>
+        <p>A Enigma é composta por uma série de rotores (geralmente 3 ou 4) que alteram o caminho das letras, realizando uma substituição baseada em uma tabela. A cada vez que uma tecla era pressionada, os rotores giravam, mudando a cifra e aumentando a complexidade da codificação.</p>
 
         <h2>Fórmulas e Códigos</h2>
         <p>A fórmula matemática básica para a codificação e decodificação na máquina Enigma pode ser representada da seguinte forma:</p>
 
         <pre>
-        C = E(P, K)
+C = E(P, K)
         </pre>
         <p>Onde:</p>
         <ul>
             <li><strong>C</strong> é o caractere codificado.</li>
             <li><strong>E</strong> é a função de codificação (Enigma).</li>
             <li><strong>P</strong> é o caractere original (plain text).</li>
-            <li><strong>K</strong> é a chave, que depende da configuração dos rotores e da posição inicial deles.</li>
+            <li><strong>K</strong> é a chave, baseada na configuração dos rotores.</li>
         </ul>
 
-        <p>De maneira simplificada, a máquina Enigma realiza uma série de substituições e permutações usando os rotores e suas conexões elétricas internas. O processo de codificação é tão complexo que, mesmo que a chave de codificação fosse conhecida, ainda seria muito difícil de decifrar a mensagem sem o conhecimento das posições dos rotores no momento da codificação.</p>
-    </section>
+        <h2>Conceitos Matemáticos Usados</h2>
+        <ul>
+            <li>Permutação de letras do alfabeto</li>
+            <li>Funções de substituição bijetoras</li>
+            <li>Cifras polialfabéticas</li>
+            <li>Movimento de rotores (comutadores rotativos)</li>
+            <li>Ciclos de substituição (ex: A → D → F → B → A)</li>
+        </ul>
 
-   
+        <h2>Exemplos de Fórmulas</h2>
+        <ol>
+            <li><strong>Substituição simples:</strong><br>
+                f(x) = P(x) <br>
+                Onde <em>P</em> é uma permutação do alfabeto.
+            </li>
+            <li><strong>Criptografia de múltiplas camadas com rotores:</strong><br>
+                C = R₃(R₂(R₁(P(x)))) <br>
+                Onde R₁, R₂, R₃ são os rotores e P é o plugboard.
+            </li>
+            <li><strong>Função reversível com refletor:</strong><br>
+                D(C) = x <br>
+                O refletor permite que a função de codificação seja invertida.
+            </li>
+        </ol>
+
+        <h2>Imagens Ilustrativas</h2>
+        <div class="image-section">
+            <figure>
+                <img src="./foto1.jpeg" alt="Permutação de letras">
+                <figcaption>Permutação de letras do alfabeto</figcaption>
+            </figure>
+            <figure>
+                <img src="./foto2.jpeg" alt="Composição de funções com rotores">
+                <figcaption>Composição de funções com rotores e refletor</figcaption>
+            </figure>
+        </div>
+    </section>
 </body>
 </html>
