@@ -107,6 +107,7 @@ header {
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
     z-index: 999;
+    list-style: none;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -147,7 +148,7 @@ header {
 }
 
 
-/* ---------------------- Rodapé (opcional) ---------------------- 
+/* ---------------------- Rodapé (opcional) ---------------------- */
 footer {
     background-color: #002244;
     color: #fff;
@@ -156,4 +157,3 @@ footer {
     margin-top: 40px;
     border-top: 4px solid #ffcc00;
 }
-*/

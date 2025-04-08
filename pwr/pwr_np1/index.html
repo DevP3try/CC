@@ -101,7 +101,7 @@
         </style>
     </head>
 <body>
-    <header>
+    <header> <!-- Barra fixa de navegacao  entre as paginas -->
         <nav class="nav-bar">
             <div class="logo-area">
                 <div class="logo-container">
@@ -109,8 +109,11 @@
                 </div>
                 <span class="curso-titulo">Ciência da Computação</span>
             </div>
+
+            <!-- Botoes de redirecionamento -->
             <ul class="main-menu">
                 <li><a href="index.html">Início</a></li>
+
                 <li class="dropdown">
                     <a href="mat/bio_mat.html">Matemático</a>
                     <ul class="dropdown-menu">
@@ -118,6 +121,7 @@
                         <li><a href="mat/ex_mat.html">Exemplos</a></li>
                     </ul>
                 </li>
+
                 <li class="dropdown">
                     <a href="fis/bio_fis.html">Físico</a>
                     <ul class="dropdown-menu">
@@ -125,7 +129,8 @@
                         <li><a href="fis/ex_fis.html">Exemplos</a></li>
                     </ul>
                 </li>
-            </ul>
+
+            </ul> <!-- encenrra main menu-->
         </nav>
     </header>
 
@@ -133,8 +138,9 @@
         <h1>Site Biográfico – Construção e Pesquisa</h1>
     </div>
 
-    <div class="container">
-        <section id="alunos">
+    <div class="container"> <!--Conteiner com o bloco de fundo branco contendo as informacoes-->
+        <section id="alunos"><!-- parte da tabela dos alunos dentro da secao-->
+
             <h2>Alunos CC1P68</h2>
             <table class="tabela-alunos">
                 <thead>
@@ -149,11 +155,14 @@
                     <tr><td>Willian</td> <td>H7690B2</td></tr> <!-- Linha 4 -->
                 </tbody>
             </table>
+
         </section>
+
     
-        <section id="cientistas">
+        <section id="cientistas"> <!-- section para comportar os blocos dos cientistas -->
             <h2>Cientistas</h2>
             <div class="cientistas">
+
                 <div class="cientista">
                     <a href="mat/bio_mat.html">
                         <img src="mat/arthur-scherbius.png"><br>
@@ -161,6 +170,7 @@
                     </a>
                     <p>Inventor da máquina Enigma, essencial na criptografia moderna.</p>
                 </div>
+
                 <div class="cientista">
                     <a href="fis/bio_fis.html">
                         <img src="fis/James-Clerk-Maxwell.png"><br>
@@ -168,8 +178,10 @@
                     </a>
                     <p>Físico pioneiro da teoria eletromagnética da luz.</p>
                 </div>
+
             </div>
-        </section>
+        </section> <!--- encerra section cientista -->
+
     </div>
 </body>
 </html>
