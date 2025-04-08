@@ -1,159 +1,159 @@
-/* Definições gerais */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f8ff; /* Azul muito claro para o fundo geral */
-    color: #333; /* Cor padrão do texto */
+/* ---------------------- Reset Básico ----------------------*/
+* {
     margin: 0;
     padding: 0;
-    margin-top: 60px; /* Ajuste conforme a altura do seu cabeçalho */
+    box-sizing: border-box;
+}
+ 
+/* ---------------------- Estrutura Geral ---------------------- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    padding-top: 90px; /* espaço pro header fixo */
 }
 
-/* Estilo geral do cabeçalho */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+h2 {
+    color: #003366; 
+
+    text-align: center;
+}
+/* ---------------------- Cabeçalho Fixo ---------------------- */
 header {
-    background-color: #003366; /* Azul escuro */
-    color: #ffcc00; /* Amarelo */
     position: fixed;
     top: 0;
     width: 100%;
+    background-color: #003366;
     z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-nav {
+.nav-bar {
     display: flex;
-    justify-content: center;
-    padding: 10px 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
 }
 
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-container {
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+.logo-unip {
+    height: 40px;
+}
+
+.curso-titulo {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* ---------------------- Navegação ---------------------- */
 .main-menu {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
+    gap: 30px;
+    align-items: center;
 }
 
-.main-menu > li {
+.main-menu li {
     position: relative;
-    margin: 0 15px;
 }
 
 .main-menu a {
-    color: #ffcc00; /* Amarelo */
+    color: #ffcc00;
     text-decoration: none;
-    font-size: 1.2em;
-    padding: 10px 15px;
-    display: block;
+    padding: 10px 14px;
+    font-weight: bold;
+    border-radius: 6px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s ease;
 }
 
 .main-menu a:hover {
-    background-color: #ffcc00; /* Amarelo */
-    color: #003366; /* Azul escuro */
+    background-color: #ffcc00;
+    color: #003366;
+    transform: translateY(-2px);
 }
 
-/* Estilo do dropdown */
+/* Submenus */
 .dropdown-menu {
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
-    background-color: #003366; /* Azul escuro */
+    left: 20%;
+    background-color: #003366;
+    border-radius: 6px;
+    min-width: 160px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 999;
     list-style: none;
-    margin: 0;
-    padding: 0;
-    min-width: 200px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
 }
 
 .dropdown-menu li {
-    border-bottom: 1px solid #ffcc00; /* Amarelo */
+    width: 100%;
 }
 
 .dropdown-menu a {
-    padding: 10px;
-    color: #ffcc00; /* Amarelo */
+    padding: 12px 16px;
+    color: #ffcc00;
+    border-radius: 0;
+    display: block;
+    white-space: nowrap;
 }
 
 .dropdown-menu a:hover {
-    background-color: #ffcc00; /* Amarelo */
-    color: #003366; /* Azul escuro */
+    background-color: #ffcc00;
+    color: #003366;
+    transform: none;
 }
 
-/* Mostrar dropdown ao passar o mouse */
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
 
-/* Ajuste para o conteúdo não ficar oculto atrás do cabeçalho fixo */
-
-#header {
-    background-color: #003366; /* Azul escuro */
-    color: #ffffff; /* Amarelo para o texto */
-    padding: 20px 0;
+/* ---------------------- Título da Página ---------------------- */
+.page-title {
     text-align: center;
+    padding: 20px 10px;
+    background-color: #003366;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-radius: 8px;
 }
 
-#header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
 
-#header p {
-    margin: 5px 0 0;
-    font-size: 1.2em;
-}
-
-/* Navegação */
-nav {
-    background-color: #002244; /* Azul ainda mais escuro */
-    text-align: center;
-    padding: 10px 0;
-}
-
-nav a {
-    color: #ffcc00; /* Amarelo para os links */
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 1.1em;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* Conteúdo principal */
-.container {
-    width: 80%;
-    margin: 20px auto;
-    background-color: #ffffff; /* Branco para o fundo do conteúdo */
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-/* Títulos */
-h2 {
-    color: #003366; /* Azul escuro */
-    border-bottom: 2px solid #ffcc00; /* Linha amarela abaixo do título */
-    padding-bottom: 5px;
-}
-
-/* Listas */
-ul {
-    list-style-type: square;
-    margin-left: 20px;
-}
-
-/* Rodapé */
+/* ---------------------- Rodapé (opcional) ---------------------- */
 footer {
-    background-color: #002244; /* Azul escuro */
-    color: #ffcc00; /* Amarelo para o texto */
+    background-color: #002244;
+    color: #fff;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-}
-
-/* Links */
-a {
-    color: #003366; /* Azul escuro */
-}
-
-a:hover {
-    text-decoration: none;
+    padding: 15px 0;
+    margin-top: 40px;
+    border-top: 4px solid #ffcc00;
 }
