@@ -1,0 +1,30 @@
+{
+  "collapse-filter": false,
+  "search": "[\"tq_show_tree\":pwr]",
+  "showTags": false,
+  "showAttachments": true,
+  "hideUnresolved": true,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "line:(pwr)",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": true,
+  "textFadeMultiplier": -0.1,
+  "nodeSizeMultiplier": 0.993229166666667,
+  "lineSizeMultiplier": 2.37135416666667,
+  "collapse-forces": false,
+  "centerStrength": 0.515625,
+  "repelStrength": 11.875,
+  "linkStrength": 0.630208333333333,
+  "linkDistance": 277,
+  "scale": 0.5694148928667605,
+  "close": false
+}
