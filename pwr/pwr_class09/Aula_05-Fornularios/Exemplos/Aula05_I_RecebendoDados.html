@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Aula 5 : Teste 2</title>
+		<style>
+			body {font-family: verdana;
+			}
+		</style>
+	</head>
+
+	<body onload="pegaDadosUrl()">
+		<h1>PÁGINA Teste_02</h1>
+		<h1>Texto enviado pela URL</h1>
+		<h2 style="color:red;" id="textoUrl"></h2>
+
+<script>
+function pegaDadosUrl() {
+	var url = window.location.search.replace("?", "");
+	var x = document.getElementById("textoUrl");
+	x.innerHTML = url;
+}
+</script>
+
+	</body>
+</html>

@@ -1,0 +1,25 @@
+body{
+    background-color: bisque;
+}
+.title {
+    background-color: black;
+    font-size: 25px;
+    text-align: center;
+
+    
+}
+.title h1{
+
+    color: white;
+}
+#button {
+    position: relative;
+    text-align: center;
+    
+}
+#button input[type="text"] {
+    width: 70%;
+    text-align: center;
+    color:#858585;
+
+}

@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Calculadora</title>
+		<style>
+			body {line-height: 30px;
+			}
+			.cmp {
+				font-size: 20;
+				background-color: rgb(240,240,240);
+				text-align: right;
+			}
+			.bt {width:100px;
+				color: red;
+				font-size: 30;
+				background-color: rgb(227,250,252);
+			}
+		</style>
+		<script>
+		
+		function somVal() {
+			//esta função somará o 
+			//...valor do campo 1 com 20 (fixo)
+			var val01 = document.getElementById("valor01").value;
+			var n1 = Number(val01);
+			var n2 = 20;
+			var res = n1 + n2;
+			document.getElementById("result").value = res;
+		}
+		
+		</script>
+	</head>
+	<body>
+		<form action="servidor/arquivo.jsp" method="GET">
+			<h2>Uma Calculadora <u>bem</u> Simples</h2>
+			<table border = "1" width="10%">
+			<tr>
+			<td>
+			<label> Valor 01</label>
+			<input type="text" name="valor01" id="valor01" size="8" value="" class="cmp"/>
+			</td>
+			<td>
+			<input type="button" onclick="somVal()" name="som" value="+" class="bt" />
+			<br/><input type="button" name="sub" value="-" class="bt" />
+			<br/><input type="button" name="vez" value="*" class="bt" />
+			<br/><input type="button" name="div" value="/" class="bt" />
+			</td>
+			<td>
+			<label> Valor 02</label>
+			<input type="text" name="valor02" id="valor02" size="8" value=""  class="cmp"/>
+			</td>
+			</tr>
+			<tr>
+			<td colspan="3"><center>
+			<label>Resultado:</label>
+			<input type="text" name="result" id="result" size="20" value="" class="cmp" />
+			</center></td>
+			</tr>
+			</table>
+		</form>
+		<p style = "font-size:20">
+		<b><u>Obs</u>.:</b>
+		Para um campo do tipo input:
+		<br/>O valor do atributo "id" serve para trabalhar com "CSS" ou com "Java Script".
+		<br/>O valor do atributo "name" serve para trabalhar com "Servidores HTML" ou "Servidores de Aplicação (em páginas dinâmicas)".
+		</p>
+	</body>
+</html>

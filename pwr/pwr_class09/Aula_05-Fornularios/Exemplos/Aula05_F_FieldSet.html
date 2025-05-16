@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Aula 5 : Página 5</title>
+		<style>
+			body {line-height: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="servidor/arquivo.jsp" method="GET">
+			<h1>Outros tipos de Campos em um Formulário</h1>
+			<p>A tag "fieldset" é usada para agrupar elementos relacionados em um formulário. Ela desenha uma caixa ao redor dos elementos relacionados.</p>
+			<h2>Área de Fieldset:</h2>
+			<fieldset>
+				<legend>Personalidade:</legend>
+				<label for="fname">Primeiro Nome:</label>
+				<input type="text" id="fname" name="fname"><br><br>
+				<label for="lname">Último Nome:</label>
+				<input type="text" id="lname" name="lname"><br><br>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email"><br><br>
+				<label for="birthday">Data de Nascimento:</label>
+				<input type="date" id="birthday" name="birthday"><br><br>
+				<input type="submit" value="Enviar">
+			</fieldset>
+		</form>
+	</body>
+</html>
