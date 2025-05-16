@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos - Lei de Gauss</title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css"/>
+    <style>
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        .example-section {
+            margin-bottom: 2.5rem;
+        }
+    
+        .example-section code {
+            background-color: #f0f4f8;
+            padding: 0.3rem 0.6rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: #003366;
+        }
+    
+        .image-box {
+            text-align: center;
+            margin-top: 2rem;
+        }
+    
+        .image-box img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+    
+        .caption {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            color: #555;
+        }
+        ul {
+            padding-left: 20px;
+        }
+
+        a {
+            color: #003366;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo-area">
+                <div class="logo-container">
+                    <img src="../static/Novo_Logo_UNIP.png" alt="Logo UNIP" class="logo-unip">
+                </div>
+                <span class="curso-titulo">Ciência da Computação</span>
+            </div>
+            <ul class="main-menu">
+                <li><a href="../index.html">Início</a></li>
+                <li class="dropdown">
+                    <a href="../mat/bio_mat.html">Matemático</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../mat/form_mat.html">Fórmulas</a></li>
+                        <li><a href="../mat/ex_mat.html">Exemplos</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../fis/bio_fis.html">Físico</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../fis/form_fis.html">Fórmulas</a></li>
+                        <li><a href="../fis/ex_fis.html">Exemplos</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main class="examples-main">
+            <div class="example-card">
+                <div class="example-section">
+                    <center><h1>Exemplos de Aplicação</h1>
+                <p>Lei de Gauss para o Campo Elétrico</p>   </center>
+                    <h2>Exemplo 1: Carga Pontual</h2>
+                    <p>Considere uma carga elétrica pontual \( q \) colocada no centro de uma esfera imaginária com raio \( r \).</p>
+                    <p>Como a distribuição é simétrica, o campo elétrico é constante em todos os pontos da superfície esférica. A Lei de Gauss nos dá:</p>
+                    <p><code>∮ E · dA = q / ε₀</code></p>
+                    <p>Como o campo é constante na superfície:</p>
+                    <p><code>E · 4πr² = q / ε₀</code> ⟶ <strong>E = q / (4πε₀r²)</strong></p>
+                </div>
+    
+                <div class="example-section">
+                    <h2>Exemplo 2: Fio Longo com Carga Linear</h2>
+                    <p>Para um fio infinito com densidade linear de carga \( λ \), usamos uma superfície cilíndrica ao redor do fio.</p>
+                    <p>Como o campo é radial e constante na lateral do cilindro:</p>
+                    <p><code>E · 2πrL = λL / ε₀</code></p>
+                    <p>Simplificando:</p>
+                    <p><strong>E = λ / (2πε₀r)</strong></p>
+                    <p>Esse campo depende da distância radial ao fio e decai mais lentamente que no caso de uma carga pontual.</p>
+                </div>
+    
+                <div class="example-section">
+                    <h2>Exemplo 3: Plano Infinito</h2>
+                    <p>Considere um plano infinito com densidade superficial de carga \( σ \). Usamos uma superfície gaussiana em forma de caixa, atravessando o plano com a mesma área em ambos os lados.</p>
+                    <p>Como o campo sai perpendicularmente dos dois lados:</p>
+                    <p><code>2EA = σA / ε₀</code> ⟶ <strong>E = σ / (2ε₀)</strong></p>
+                    <p>Observe que o campo é constante e independente da distância ao plano.</p>
+                </div>
+    
+                <div class="example-section">
+                    <h2>Visualização</h2>
+                    <div class="image-box">
+                        <img src="fis foto 1.png" alt="Visualização da Lei de Gauss">
+                        <p class="caption">Representação gráfica do campo elétrico saindo de uma superfície esférica com carga interna</p>
+                    </div>
+                </div>
+    
+                <div class="example-section">
+                    <h2>Conclusão</h2>
+                    <p>A Lei de Gauss é uma ferramenta poderosa para calcular o campo elétrico de distribuições simétricas de carga. Seu uso se destaca em casos onde a simetria permite simplificar as integrais de superfície e encontrar resultados precisos de forma direta.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    
+    <footer>
+        <p><strong>Referência Bibliográfica:</strong></p>
+        <p>MAXWELL, James Clerk. <em>Físico escocês e pai do eletromagnetismo clássico</em>. Disponível em: 
+            <a href="https://pt.wikipedia.org/wiki/James_Clerk_Maxwell" target="_blank" style="color: #ccc;">https://pt.wikipedia.org/wiki/James_Clerk_Maxwell</a>. 
+            Acesso em: 07 abr. 2025.
+        </p>
+    </footer>
+
+</body>
+</html>
