@@ -1,0 +1,159 @@
+/* ---------------------- Reset Básico ----------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+/* ---------------------- Estrutura Geral ---------------------- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    padding-top: 90px; /* espaço pro header fixo */
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+h2 {
+    color: #003366; 
+
+    text-align: center;
+}
+/* ---------------------- Cabeçalho Fixo ---------------------- */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #003366;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-container {
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+.logo-unip {
+    height: 40px;
+}
+
+.curso-titulo {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* ---------------------- Navegação ---------------------- */
+.main-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.main-menu li {
+    position: relative;
+}
+
+.main-menu a {
+    color: #ffcc00;
+    text-decoration: none;
+    padding: 10px 14px;
+    font-weight: bold;
+    border-radius: 6px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s ease;
+}
+
+.main-menu a:hover {
+    background-color: #ffcc00;
+    color: #003366;
+    transform: translateY(-2px);
+}
+
+/* Submenus */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 20%;
+    background-color: #003366;
+    border-radius: 6px;
+    min-width: 160px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 999;
+    list-style: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu a {
+    padding: 12px 16px;
+    color: #ffcc00;
+    border-radius: 0;
+    display: block;
+    white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ffcc00;
+    color: #003366;
+    transform: none;
+}
+
+
+/* ---------------------- Título da Página ---------------------- */
+.page-title {
+    text-align: center;
+    padding: 20px 10px;
+    background-color: #003366;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+
+/* ---------------------- Rodapé (opcional) ---------------------- */
+footer {
+    background-color: #002244;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    border-top: 4px solid #ffcc00;
+}

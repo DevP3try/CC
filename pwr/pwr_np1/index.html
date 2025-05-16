@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Site Biográfico – Construção e Pesquisa</title>
+        <link rel="stylesheet" href="static/style.css">
+        <style>
+                        /* ---------------------- Cientistas ---------------------- */
+            .cientistas {
+                display: flex;
+                justify-content: space-around;
+                margin-top: 30px;
+                gap: 40px;
+                flex-wrap: wrap;
+            }
+
+            .cientista {
+                text-align: center;
+                transition: transform 0.3s ease;
+            }
+
+            .cientista img {
+                width: 250px;
+                height: auto;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                transition: transform 0.3s ease;
+            }
+
+            .cientista:hover img {
+                transform: scale(1.05);
+            }
+
+            .cientista a {
+                display: block;
+                margin-top: 10px;
+                font-weight: bold;
+                color: #003366;
+                text-decoration: none;
+            }
+
+            .cientista a:hover {
+                color: #ffcc00;
+            }
+
+            .cientista p {
+                margin-top: 10px;
+                font-size: 0.9rem;
+                color: #444;
+                max-width: 250px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            /* ---------------------- Alunos ---------------------- */
+            #alunos {
+                margin-bottom: 40px;
+                text-align: center;
+            }
+
+            .tabela-alunos {
+                width: 30%;
+                margin: 20px auto;
+                border: 2px solid #003366;
+                border-radius: 8px;
+                overflow: hidden;
+                background-color: white;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            .tabela-alunos th {
+                background-color: #003366;
+                color: #ffcc00;
+                padding: 10px;
+            }
+
+            .tabela-alunos td {
+                padding: 8px;
+                text-align: center;
+                background-color: #f9f9f9;
+            }
+
+            /* ---------------------- Tabela Geral ---------------------- */
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+
+            th, td {
+                border: 1px solid #ccc;
+                padding: 10px;
+                text-align: center;
+            }
+
+            th {
+                background-color: #003366;
+                color: #ffcc00;
+            }
+
+        </style>
+    </head>
+<body>
+    <header> <!-- Barra fixa de navegacao  entre as paginas -->
+        <nav class="nav-bar">
+            <div class="logo-area">
+                <div class="logo-container">
+                    <img src="static/Novo_Logo_UNIP.png" alt="Logo UNIP" class="logo-unip">
+                </div>
+                <span class="curso-titulo">Ciência da Computação</span>
+            </div>
+
+            <!-- Botoes de redirecionamento -->
+            <ul class="main-menu">
+                <li><a href="index.html">Início</a></li>
+
+                <li class="dropdown">
+                    <a href="mat/bio_mat.html">Matemático</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="mat/form_mat.html">Fórmulas</a></li>
+                        <li><a href="mat/ex_mat.html">Exemplos</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="fis/bio_fis.html">Físico</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="fis/form_fis.html">Fórmulas</a></li>
+                        <li><a href="fis/ex_fis.html">Exemplos</a></li>
+                    </ul>
+                </li>
+
+            </ul> <!-- encenrra main menu-->
+        </nav>
+    </header>
+
+    <div class="page-title">
+        <h1>Site Biográfico – Construção e Pesquisa</h1>
+    </div>
+
+    <div class="container"> <!--Conteiner com o bloco de fundo branco contendo as informacoes-->
+        <section id="alunos"><!-- parte da tabela dos alunos dentro da secao-->
+
+            <h2>Alunos CC1P68</h2>
+            <table class="tabela-alunos">
+                <thead>
+                    <tr>
+                        <th>Nome</th> <th>RA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Anderson</td> <td>R829952</td></tr> <!-- Linha 1 -->
+                    <tr><td>Victor</td> <td>H7147H3</td></tr> <!-- Linha 2 -->
+                    <tr><td>Roger</td> <td>R864JH0</td></tr> <!-- Linha 3 -->
+                    <tr><td>Willian</td> <td>H7690B2</td></tr> <!-- Linha 4 -->
+                </tbody>
+            </table>
+
+        </section>
+
+    
+        <section id="cientistas"> <!-- section para comportar os blocos dos cientistas -->
+            <h2>Cientistas</h2>
+            <div class="cientistas">
+
+                <div class="cientista">
+                    <a href="mat/bio_mat.html">
+                        <img src="mat/arthur-scherbius.png"><br>
+                        Arthur Scherbius
+                    </a>
+                    <p>Inventor da máquina Enigma, essencial na criptografia moderna.</p>
+                </div>
+
+                <div class="cientista">
+                    <a href="fis/bio_fis.html">
+                        <img src="fis/James-Clerk-Maxwell.png"><br>
+                        James Clerk Maxwell
+                    </a>
+                    <p>Físico pioneiro da teoria eletromagnética da luz.</p>
+                </div>
+
+            </div>
+        </section> <!--- encerra section cientista -->
+
+    </div>
+</body>
+</html>
