@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class05-PWR</title>
+</head>
+<body>
+    <center><h1>Formulário</h1></center>
+    <form action="Aula_05-Fornularios/Exemplos/Aula05_I_RecebendoDados.html" method="GET" style="background-color: lightgray; border-style: solid; border-color: blue;">
+        <table class="main-info" border="0">
+            <tr> <!-- Linha 1 -->
+                <th>Nome:</th>
+                <td><input type="text" name="" id="name" size="80"></td>
+            </tr>
+            <tr> <!-- Linha 2 -->
+                <th>Idade:</th>
+                <td><input type="number" name="" id="idade" size="15"></td>
+            </tr>
+            <tr><!-- Linha 3 -->
+
+                <th>Senha:</th>
+                <td><input type="password" name="" id="senha" size="60"></td>
+            </tr>
+        </table>
+        <table class="formation" style="width: 100%;">            <tr>
+                <th>Sexo:</th>
+                <td>
+                    <input type="radio" name="sex"id="sex_masc">
+                    <label for="sex_masc">Masculino</label>
+                </td>
+                <th>Formação:</th>
+                <td>
+                    <input type="radio" name="grau" id="1o-grau">
+                    <label for="1o-grau">1o grau completo</label>
+                </td>
+            </tr>
+            <tr>
+                <th></th>
+                <td>
+                    <input type="radio" name="sex"id="sex_fem">
+                    <label for="sex_masc">Feminino</label>
+                </td>
+                <th></th>
+                <td>
+                    <input type="radio" name="grau"id="2o-grau">
+                    <label for="2o-grau">2o grau completo</label>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                </th>
+                <td>
+                </td>
+                <th>
+                </th>
+                <td>
+                    <input type="radio" name="grau" id="3o-grau">
+                    <label for="3o-grau">3o grau completo</label>
+                </td>
+            </tr>
+        </table>
+        <div class="city_select">
+            <b><label for="city">Cidade:</label></b>
+            <select name="city" id="city" size="1">
+                <option value="São Paulo">São Paulo</option>
+                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                <option value="Santa Catarina">Santa Catarina</option>
+                <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+            </select>
+        </div>
+        <table class="lazer">
+            <tr>
+                <th>Lazer:</th>
+                <td><input type="radio" name="lazer" value="livros">
+                <label for="livros">Livros</label></td>
+            </tr>
+                <th></th>
+                <td><input type="radio" name="lazer" value="cinema">
+                <label for="cinema">Cinema</label></td>
+            
+            <tr>
+                <th></th>
+                <td><input type="radio" name="lazer" value="teatro">
+                <label for="teatro">Teatro</label></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td>
+                    <input type="radio" name="lazer" value="outros">
+                    <label for="outros">Outros:</label>
+                    <input type="text" name="text-outros" id="text_outros" size="50">
+                </td>
+            </tr>
+        </table>
+        <div class="comentarios">
+            <label for="comentarios"><b>Comentários:</b></label><br>
+            <textarea name="comentarios" style="width: 97%; height: 125px; margin-left: 1%;"></textarea>
+        </div>
+        <div class="bt_submit"><center>
+            <input type="reset" value="Refazer">
+            <input type="submit" value="Enviar">
+            </center>
+        </div>
+    </form>
+</body>
+</html>

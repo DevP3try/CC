@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Aula 5 : Página 1</title>
+		<style>
+			body {line-height: 30px;
+			}
+			.bt {width:100px;
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="servidor/arquivo.jsp" method="GET">
+			<h2>Tipos de Inputs em um Formulário</h2>
+			<br/><label>Campo de texto simples (text):</label>
+			<input type="text" name="nome_campo" size="30" value="teste" />
+			<br/><label>Campo de senha (password):</label>
+			<input type="password" name="nome_campo" size="30" />
+			<br/><label>Campo de texto escondido (hidden):</label>
+			<input type="hidden" name="nome_campo" />
+			<br/><label>Campo 1 de seleção única (radio):</label>
+			<input type="radio" name="nome_campo" />
+			<br/><label>Campo 2 de seleção única (radio):</label>
+			<input type="radio" name="nome_campo" checked />
+			<br/><label>Campo 1 de seleção múltipla (checkbox):</label>
+			<input type="checkbox" name="nome_campo" />
+			<br/><label>Campo 2 de seleção múltipla (checkbox):</label>
+			<input type="checkbox" name="nome_campo" checked />
+			<br/><label>Botão de submit ou envio de documento (submit):</label>
+			<input type="submit" name="nome_campo" value="Enviar" class="bt" />
+			<br/><label>Botão de reset dos dados do documento (reset):</label>
+			<input type="reset" name="nome_campo" value="Iniciar" class="bt" />
+			<br/><label>Botão que aciona função em JS (button):</label>
+			<input type="button" name="nome_campo" value="Botão" class="bt" />
+		</form>
+	</body>
+</html>

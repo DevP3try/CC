@@ -1,0 +1,85 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Calculadora</title>
+		<style>
+			body {
+				line-height: 30px;
+				
+			}
+			div {
+				background-color:#001a00;
+				color: white;
+			}
+			table {
+				color: white;
+			}
+			.cmp {
+				font-size: 20;
+				background-color: rgb(240,240,240);
+				text-align: right;
+			}
+			.bt {width:100px;
+				color: red;
+				font-size: 30;
+				background-color: rgb(227,250,252);
+			}
+		</style>
+		<script>
+		
+		function somVal(sinal) {
+			var val01 = document.getElementById("valor01").value;
+			var val02 = document.getElementById("valor02").value;
+			var sinal = sinal
+			console.log(sinal)
+			var n1 = Number(val01);
+			var n2 = Number(val02);
+			var res = 0
+			if (sinal == '+')
+				var res = n1 + n2;
+			else if (sinal == '*')
+				var res = n1 * n2;
+			else  if (sinal == '/')
+				var res = n1 / n2;
+			else if (sinal == '-')			
+				var res = n1 - n2;
+			
+			document.getElementById("result").value = res;
+		}
+	
+
+		</script>
+	</head>
+	<body>
+		<div>
+			<form action="servidor/arquivo.jsp" method="GET">
+				<h2>Uma Calculadora <u>bem</u> Simples</h2>
+				<table border = "1" width="10%">
+				<tr>
+				<td>
+				<label> Valor 01</label>
+				<input type="text" name="valor01" id="valor01" size="8" value="" class="cmp"/>
+				</td>
+				<td>
+				<input type="button" onclick="somVal('+')" name="som" value="+" id="bt" />
+				<br/><input type="button" onclick="somVal('-')" name="sub" value="-" id="bt" />
+				<br/><input type="button" onclick="somVal('*')" name="vez" value="*" id="bt" />
+				<br/><input type="button" onclick="somVal('/')" name="div" value="/" id="bt" />
+				</td>
+				<td>
+				<label> Valor 02</label>
+				<input type="text" name="valor02" id="valor02" size="8" value=""  class="cmp"/>
+				</td>
+				</tr>
+				<tr>
+				<td colspan="3"><center>
+				<label>Resultado:</label>
+				<input type="text" name="result" id="result" size="20" value="" class="cmp" />
+				</center></td>
+				</tr>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>
