@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Fórmulas Matemáticas da Máquina Enigma</title>
+    <link rel="stylesheet" href="../static/style.css"/>
+    <style>
+        main.content {
+            max-width: 960px;
+            margin: 2rem auto;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+    
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #003366;
+            text-align: center;
+        }
+    
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #004080;
+        }
+    
+        h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #004080;
+        }
+    
+        p, li {
+            font-size: 1rem;
+            margin-bottom: 0.8rem;
+        }
+    
+        ul {
+            padding-left: 1.5rem;
+        }
+    
+        code {
+            background-color: #eef;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+    
+        pre code {
+            display: block;
+            padding: 1rem;
+            background-color: #eef3fb;
+            border-left: 4px solid #003366;
+            white-space: pre-wrap;
+        }
+    
+        .image-section {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+    
+        figure {
+            margin: 0;
+            text-align: center;
+        }
+    
+        figure img {
+            max-width: 50%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+    
+        figcaption {
+            margin-top: 0.5rem;
+            font-style: italic;
+            color: #444;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        a {
+            color: #003366;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo-area">
+                <div class="logo-container">
+                    <img src="../static/Novo_Logo_UNIP.png" alt="Logo UNIP" class="logo-unip">
+                </div>
+                <span class="curso-titulo">Ciência da Computação</span>
+            </div>
+            <ul class="main-menu">
+                <li><a href="../index.html">Início</a></li>
+                <li class="dropdown">
+                    <a href="../mat/bio_mat.html">Matemático</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../mat/form_mat.html">Fórmulas</a></li>
+                        <li><a href="../mat/ex_mat.html">Exemplos</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../fis/bio_fis.html">Físico</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../fis/form_fis.html">Fórmulas</a></li>
+                        <li><a href="../fis/ex_fis.html">Exemplos</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <h1>Fórmulas Matemáticas da Máquina Enigma</h1>
+
+        <section>
+            <h2> Introdução</h2>
+            <p>
+                A <strong>Máquina Enigma</strong> foi uma invenção revolucionária no campo da criptografia. Utilizando mecanismos eletromecânicos e fundamentos matemáticos, ela foi usada para codificar mensagens secretas durante a Segunda Guerra Mundial.
+            </p>
+        </section>
+
+        <section>
+            <h2>Como Funciona?</h2>
+            <p>
+                Ao pressionar uma tecla, uma série de rotores rotaciona e transforma a letra em outra, conforme uma sequência de <strong>permutações</strong>. O caminho é influenciado por diversos componentes: o teclado, os rotores, o refletor e novamente os rotores — agora no caminho reverso.
+            </p>
+        </section>
+
+        <section>
+            <h2>Fórmulas Envolvidas</h2>
+            <p>A criptografia da Enigma pode ser expressa como:</p>
+            <pre><code>C = E(P, K)</code></pre>
+            <ul>
+                <li><strong>P:</strong> Texto original (plaintext)</li>
+                <li><strong>K:</strong> Chave de configuração dos rotores</li>
+                <li><strong>E:</strong> Função de codificação</li>
+                <li><strong>C:</strong> Texto cifrado (ciphertext)</li>
+            </ul>
+
+            <h3>Composição com múltiplos rotores:</h3>
+            <pre><code>C = R₃(R₂(P₁(x)))</code></pre>
+            <p>
+                Onde cada <strong>R<sub>n</sub></strong> representa uma função de permutação realizada por um rotor, aumentando exponencialmente a segurança da cifra.
+            </p>
+        </section>
+
+        <section>
+            <h2>Conceitos Matemáticos Envolvidos</h2>
+            <ul>
+                <li><strong>Permutações:</strong> Troca de posições entre letras.</li>
+                <li><strong>Bijeções:</strong> Garantem que cada letra tenha um único correspondente.</li>
+                <li><strong>Composição de Funções:</strong> A saída de uma função se torna entrada da próxima (R₃(R₂(R₁))).</li>
+                <li><strong>Funções Reversíveis:</strong> Possibilita decifrar sem perdas.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Ilustrações e Explicações Visuais</h2>
+            <div class="image-section">
+                <figure>
+                    <img src="./foto2.jpeg">
+                    <figcaption>
+                        <strong>Figura 1:</strong> Cada letra do texto original (<em>x</em>) percorre três rotores (R₁, R₂, R₃), chega ao refletor (Reflektor) e volta pelos mesmos rotores. A saída final é a letra cifrada (<em>C</em>).
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./foto1.jpeg">
+                    <figcaption>
+                        <strong>Figura 2:</strong> Exemplo de uma permutação de letras. Cada letra do alfabeto é mapeada para outra de forma única e reversível.
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><strong>Referência Bibliográfica:</strong></p>
+        <p>SCHERBIUS, Arthur. <em>Biografia e legado do inventor da Máquina Enigma</em>. Disponível em: 
+            <a href="https://pt.wikipedia.org/wiki/Arthur_Scherbius" target="_blank" style="color: #ccc;">https://pt.wikipedia.org/wiki/Arthur_Scherbius</a>. 
+            Acesso em: 07 abr. 2025.
+        </p>
+    </footer>
+</body>
+</html>

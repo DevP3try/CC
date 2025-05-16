@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arthur Scherbius – Site Biográfico</title>
+    <link rel="stylesheet" href="../static/style.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #e6f1fb;
+            font-family: Arial, sans-serif;
+        }
+
+        .bio-main {
+            background-color: #e6f1fb;
+            padding: 2rem;
+        }
+        .bio-card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 2rem;
+            max-width: 1000px;
+            margin: auto;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .bio-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .bio-photo img {
+            width: 250px;
+            border: 3px solid #000;
+        }
+
+        .bio-grid {
+            display: flex;
+            justify-content: space-between;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .bio-section {
+            background-color: #fdfdfd;
+            border: 1px solid #ccc;
+            padding: 1rem;
+            border-radius: 8px;
+            flex: 1;
+        }
+
+        .bio-section.small-box {
+            flex: 0.8;
+        }
+
+        .bio-section h3 {
+            margin-top: 0;
+            color: #003366;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        a {
+            color: #003366;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        .page-title {
+            text-align: center;
+            padding: 80px 10px;
+            padding-bottom: 20px;
+            background-color: #003366;
+            color: white;
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo-area">
+                <div class="logo-container">
+                    <img src="../static/Novo_Logo_UNIP.png" alt="Logo UNIP" class="logo-unip">
+                </div>
+                <span class="curso-titulo">Ciência da Computação</span>
+            </div>
+            <ul class="main-menu">
+                <li><a href="../index.html">Início</a></li>
+                <li class="dropdown">
+                    <a href="../mat/bio_mat.html">Matemático</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../mat/form_mat.html">Fórmulas</a></li>
+                        <li><a href="../mat/ex_mat.html">Exemplos</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../fis/bio_fis.html">Físico</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../fis/form_fis.html">Fórmulas</a></li>
+                        <li><a href="../fis/ex_fis.html">Exemplos</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="page-title">
+        <h1>Arthur Scherbius</h1>
+        <p>Engenheiro e Inventor da Máquina Enigma</p>
+    </div>
+    <main class="bio-main">
+        <div class="bio-card">
+            <div class="bio-header">
+                <div class="bio-text">
+                    <h2> Quem foi Arthur Scherbius ?</h2><br>
+                    <p>
+                        <strong> Arthur Scherbius</strong> (1878 - 1929) foi um engenheiro elétrico alemão, mais conhecido por inventar a máquina Enigma,
+                         usada para codificação durante a Segunda Guerra Mundial. A Enigma foi uma das primeiras máquinas de codificação a utilizar rotores,
+                          tornando as mensagens extremamente difíceis de serem quebradas sem a chave correta.
+                    </p><br>
+                    <h3>Principais Temas</h3> <br>
+                    <ul>
+                        <li>Engenharia elétrica</li><br>
+                        <li>Criptografia</li><br>
+                        <li>Codificação e decodificação de mensagens</li><br>
+                        <li>Desenvolvimento de dispositivos eletromecânicos</li><br>
+                        <li>Segurança em comunicações militares</li><br>
+                        <li>Transmissão segura de informações</li><br>
+                        <li>Invenção de máquinas de cifra</li><br>
+                    </ul>
+                    <br>
+                    <h3>Curiosidades e Particularidades</h3><br>
+                    <p>
+                        Arthur Scherbius foi um engenheiro elétrico e inventor alemão conhecido principalmente por ter criado a máquina Enigma, 
+                        um dispositivo de codificação utilizado pela Alemanha na Segunda Guerra Mundial. Curiosamente, ele desenvolveu a máquina muito antes da guerra, 
+                        em 1918, com a intenção de vendê-la para empresas comerciais, não para uso militar.
+
+                        Scherbius fundou a empresa Scherbius & Ritter para comercializar sua invenção. 
+                        Além da criptografia, também trabalhou com motores elétricos e patentes voltadas para melhoria de equipamentos elétricos. 
+                        Infelizmente, ele faleceu antes de ver o impacto real de sua invenção no cenário mundial. Scherbius era discreto, 
+                        mas extremamente visionário e preocupado com a segurança das informações em uma era ainda no início da comunicação 
+                        moderna.
+                    </p><br>
+                    <h3>Legado</h3><br>
+                    <p>
+                        A contribuição de Scherbius para a criptografia foi imensa, influenciando o desenvolvimento de sistemas de segurança moderna. Sua invenção foi crucial durante a Segunda Guerra Mundial, 
+                        sendo quebrada pelos aliados, o que ajudou a acelerar a vitória contra a Alemanha Nazista.
+                    </p><br>
+                </div>
+                <div class="bio-header">
+                    <div class="bio-photo">
+                        <img src="arthur-scherbius.png" alt="Arthur Scherbius" />
+                        <div class="bio-section small-box">
+                            <h3>Informações Gerais</h3>
+                            <p>
+                                <strong>Nome:</strong> Arthur Scherbius<br>
+                                <strong>Nacionalidade:</strong> Alemão<br>
+                                <strong>Data de nascimento:</strong> 30 de outubro de 1878<br>
+                                <strong>Local de nascimento:</strong> Frankfurt am Main, Alemanha<br>
+                                <strong>Data de falecimento:</strong> 13 de maio de 1929<br>
+                                <strong>Local de falecimento:</strong> Berlim, Alemanha<br>
+                                <strong>Onde viveu:</strong> Principalmente na Alemanha<br>
+                            </p>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="bio-section">
+                <h2>Links Relacionados</h2>
+                <ul>
+                    <li>
+                        <strong><a href="form_mat.html">Fórmulas da Máquina Enigma</a></strong><br>
+                        Nesta página, você encontrará uma apresentação das fórmulas e conceitos matemáticos aplicados por Arthur Scherbius no funcionamento da Máquina Enigma. Ideal para entender a base lógica e criptográfica do equipamento.
+                    </li>
+                    <br>
+                    <li>
+                        <strong><a href="ex_mat.html">Como Usar a Máquina Enigma</a></strong><br>
+                        Aqui são demonstrados exemplos práticos de como as mensagens eram codificadas e decodificadas utilizando a Enigma, facilitando a compreensão de seu funcionamento passo a passo.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p><strong>Referência Bibliográfica:</strong></p>
+        <p>SCHERBIUS, Arthur. <em>Biografia e legado do inventor da Máquina Enigma</em>. Disponível em: 
+            <a href="https://pt.wikipedia.org/wiki/Arthur_Scherbius" target="_blank" style="color: #ccc;">https://pt.wikipedia.org/wiki/Arthur_Scherbius</a>. 
+            Acesso em: 07 abr. 2025.
+        </p>
+    </footer>
+    
+</body>
+</html>
